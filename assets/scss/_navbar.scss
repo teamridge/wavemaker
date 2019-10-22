@@ -1,0 +1,53 @@
+.navbar {
+  padding: 1rem;
+  position: relative;
+  height: 100%;
+  & .navbar-brand {
+    width: 100%;
+    padding: 25px 1.5rem;
+    & .logo-mark {
+      position: relative;
+      transition: all 0.175s ease-in-out;
+      transform: translateX(-25%);
+      opacity: 0;
+      &.show {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      & img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  & .navbar-menu {
+    height: 100%;
+    padding: 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  & .navbar-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 1rem 0;
+    & a {
+      text-decoration: none;
+      color: var(--color);
+      font-family: AvenirNextRegular;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: var(--primary-color);
+      }
+      &.active {
+        color: var(--primary-color);
+      }
+      &.isOverSection {
+        color: white !important;
+      }
+    }
+  }
+}

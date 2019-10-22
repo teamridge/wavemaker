@@ -1,0 +1,108 @@
+.text-grey {
+  color: var(--color);
+}
+
+.text-white {
+  color: white;
+}
+
+.opacity--20 {
+  opacity: 0.2;
+}
+
+// Margins
+.m-vertical--none {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.m-left--xxl {
+  margin-left: 3rem;
+}
+
+.m-top--none {
+  margin-top: 0;
+}
+
+.m-top--large {
+  margin-top: 1.5rem;
+}
+
+.m-top--x-large {
+  margin-top: 2rem;
+}
+
+.m-top--xx-large {
+  margin-top: 3rem;
+}
+
+.m-bottom--none {
+  margin-bottom: 0;
+}
+
+.m-bottom--x-small {
+  margin-bottom: 0.5rem;
+}
+
+.m-bottom--small {
+  margin-bottom: 0.75rem;
+}
+
+.m-bottom--medium {
+  margin-bottom: 1rem;
+}
+
+.m-bottom--large {
+  margin-bottom: 1.5rem;
+}
+
+.m-bottom--x-large {
+  margin-bottom: 2rem;
+}
+
+.m-bottom--xx-large {
+  margin-bottom: 3rem;
+}
+
+// Paddings
+.p-bottom--xx-large {
+  padding-bottom: 3rem;
+}
+
+// Flex
+.flex {
+  display: flex;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+// Animation + Delays
+.delay-0750 {
+  animation-delay: 0.75s;
+}
+.delay-1250 {
+  animation-delay: 1.25s;
+}
+.delay-1500 {
+  animation-delay: 1.5s;
+}
+.delay-1750 {
+  animation-delay: 1.75s;
+}
+.delay-2000 {
+  animation-delay: 2s;
+}

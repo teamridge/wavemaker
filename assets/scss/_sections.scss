@@ -1,0 +1,233 @@
+.intro {
+  position: relative;
+  overflow: visible;
+  padding: 9rem 0 6rem;
+  @media (min-width: 1024px) {
+    padding: 12rem 0 9rem;
+  }
+  @media (min-width: 1245px) {
+    padding: 7rem 0 11rem;
+  }
+  .logo {
+    max-width: 160px;
+    margin-bottom: 80px;
+    display: none;
+    @media (min-width: 768px) {
+      max-width: 200px;
+      margin-bottom: 120px;
+    }
+    @media (min-width: 1245px) {
+      display: block;
+    }
+    @media (min-width: 1024px) {
+      max-width: 260px;
+      margin-bottom: 120px;
+    }
+  }
+  .tagline {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: AvenirNextBold;
+    letter-spacing: 0.1rem;
+    line-height: 0.6;
+    color: var(--primary-color);
+    @media (min-width: 768px) {
+      font-size: 4rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 5rem;
+    }
+    & span {
+      display: block;
+      margin-left: -0.1rem;
+      @media (min-width: 768px) {
+        margin-left: -0.2rem;
+      }
+      @media (min-width: 1024px) {
+        margin-left: -0.4rem;
+      }
+    }
+    & span:nth-child(2) {
+      margin-left: 2rem;
+      @media (min-width: 768px) {
+        margin-left: 3.9rem;
+      }
+      @media (min-width: 1024px) {
+        margin-left: 6.3rem;
+      }
+    }
+  }
+}
+
+.mission-hero {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto 300px auto;
+  grid-template-rows: auto auto;
+  background-color: var(--primary-color);
+  background-image: url("~/static/mission-hero-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  @media (min-width: 500px) {
+    grid-template-columns: auto 400px auto;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: auto 500px auto;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 600px auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto 480px 50vw;
+    grid-template-rows: auto;
+    background-image: url("~/static/mission-hero-desktop.jpg");
+  }
+  & .content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 1024px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
+  & .video {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (min-width: 1024px) {
+      display: block;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    & video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-top: 0;
+  // z-index: 30;
+  @media (min-width: 500px) {
+    grid-template-columns: auto 400px auto;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: auto 500px auto;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 600px auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto 960px auto;
+  }
+  .carousel-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .carousel-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 3rem;
+    @media (min-width: 768px) {
+      padding-top: 6rem;
+    }
+    & .row:nth-child(1) {
+      min-height: 270px;
+    }
+  }
+}
+
+.company-logos {
+  padding: 0;
+  overflow: hidden;
+  z-index: 100;
+  max-width: 100%;
+  max-width: 100vw;
+  -webkit-transform: translate3d(0, 0, 0); //Fixes z-index bug on Safari desktop
+  z-index: 20;
+}
+
+.funds {
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 500px) {
+    grid-template-columns: auto 400px auto;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: auto 500px auto;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 600px auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto 960px auto;
+  }
+  & .content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  & .map {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+  }
+  & svg {
+    width: 100%;
+  }
+  & .animated-map-dot {
+    animation: pulse 2s infinite;
+  }
+}
+
+.team {
+  z-index: 5;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+// Animation for location dots on map
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    r: 8;
+    stroke-width: 2;
+  }
+  100% {
+    opacity: 0;
+    r: 12;
+    stroke-width: 4;
+  }
+}
+
+.footer-content {
+  & .logo {
+    max-width: 260px;
+  }
+  & .locations {
+    line-height: 2;
+  }
+  & .contact {
+    line-height: 2;
+  }
+}

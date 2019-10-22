@@ -1,0 +1,43 @@
+
+
+.Job {
+  padding: 3rem 0;
+
+  .sub-bullet {
+    margin-left: 20px;
+  }
+
+  p {
+    font-family: Avenir Next;
+  }
+
+  .apply-section {
+    margin: 30px 0;
+
+    a {
+      font-size: 18px;
+    }
+  }
+  .qualifications {
+    padding: 10px 0;
+
+    ul {
+      padding-inline-start: 40px;
+      list-style-type: disc;
+      padding-top: 5px;
+    }
+  }
+  .disclosure {
+    margin-top: 25px;
+  }
+}
+.job-wrapper {
+  main {
+    background-image: none;
+  }
+
+  .job-intro {
+    padding: 1rem 0;
+  }
+}
+

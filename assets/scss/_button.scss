@@ -1,0 +1,22 @@
+.button {
+  background-color: #fff;
+  border: 1px solid var(--link-color);
+  color: var(--link-color);
+  outline: none !important;
+  cursor: pointer;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 14px;
+  &:hover {
+    color: white;
+    background-color: var(--link-color);
+  }
+  &:active {
+    background-color: #3878e2;
+    border: 1px solid var(--link-color);
+    color: #fbfbfb;
+  }
+}

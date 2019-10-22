@@ -1,0 +1,112 @@
+.wrapper {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  @media (min-width: 500px) {
+    grid-template-columns: auto 400px auto;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: auto 500px auto;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 600px auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto 960px auto;
+  }
+}
+
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 140px;
+  height: 100%;
+  z-index: 10;
+  @media (min-width: 1245px) {
+    display: block;
+    z-index: 3;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("~/static/bg-lines.svg");
+  background-size: 300px auto;
+  background-position: top center;
+  background-repeat: repeat-y;
+  @media (min-width: 500px) {
+    grid-template-columns: auto 400px auto;
+    background-size: 400px auto;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: auto 500px auto;
+    background-size: 500px auto;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 600px auto;
+    background-size: 600px auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto 960px auto;
+    background-size: 960px auto;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #f4f7fb;
+  padding: 6rem 0;
+  @media (min-width: 500px) {
+    grid-template-columns: auto 400px auto;
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: auto 500px auto;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 600px auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto 960px auto;
+  }
+  & .footer-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  & a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0745af;
+    text-decoration: none;
+  }
+}
+
+section {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 4rem 0;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
+  &.fullwidth {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}

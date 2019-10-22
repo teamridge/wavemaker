@@ -1,0 +1,100 @@
+p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: AvenirNextMedium;
+  margin: 0 0 1rem 0;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+}
+
+a {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: AvenirNextDemiBold;
+  color: var(--link-color);
+  text-decoration: underline;
+  background-color: transparent;
+  display: inline-block;
+  &.white {
+    color: white;
+  }
+}
+
+.headline {
+  font-size: 24px;
+  font-family: AvenirNextDemiBold;
+  color: var(--primary-color);
+}
+
+.headline--hero {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: AvenirNextMedium;
+  color: white;
+  line-height: 1.4;
+  @media (max-width: 1023px) {
+    margin: 3rem 0 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    margin: 1.5rem 3rem 1.5rem 0;
+    font-size: 20px;
+  }
+  @media (min-width: 1245px) {
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    font-size: 24px;
+  }
+  @media (min-width: 1440px) {
+    margin: 1.5rem 2rem 4rem 0;
+    font-size: 31px;
+    line-height: 1.2;
+  }
+}
+
+.title-number {
+  font-size: 30px;
+  font-family: AvenirNextBold;
+  color: var(--primary-color);
+}
+
+.title-small--grey {
+  font-size: 14px;
+  font-style: italic;
+  font-family: AvenirNextItalic;
+  color: var(--color);
+}
+
+.title-small--primary {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.title-primary {
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+}
+
+.title-city {
+  font-size: 18px;
+  font-family: AvenirNextDemiBold;
+  color: var(--primary-color);
+}
+
+.text-small--primary {
+  font-size: 15px;
+  font-family: AvenirNextDemiBold;
+  color: var(--primary-color);
+}
+
+.text-small--grey {
+  font-size: 15px;
+  font-family: AvenirNextMedium;
+  color: var(--color);
+}
+
+.title-short {
+  font-size: 30px;
+  font-family: AvenirNextDemiBold;
+  color: var(--primary-color);
+}
